@@ -1,0 +1,120 @@
+
+\newcommand{\citeauthorandyear}[2][]{
+   [\citeauthor{#2} (\citeyear[#1]{#2})]
+}
+
+\documentclass[12pt]{article}
+\input{includes}
+
+\renewcommand*{\bibfont}{\footnotesize}
+\renewcommand{\refname}{\fontseries{m}\selectfont References}
+\addbibresource{bibliography.bib}
+
+\def \projectname {Review on Gravitational Wave Analysis of Neutron Stars}
+\def \authone {V. Dheeraj Shenoy}
+\def \authtwo {Aprameya M. Haritsa}
+\def \guidename {Mr. Sundar M. N.}
+\def \director {Dr. Asha Rajiv}
+\def \mdot {$M_\odot$ }
+
+\linespread{1.5} % Set line spacing to 1.5 times
+
+\begin{document}
+
+\begin{center}
+
+\thispagestyle{empty}
+
+\includegraphics[width=0.4\textwidth, height=0.12\textwidth, ]{images/jain logo.png}
+
+\vspace{1cm}
+
+\textbf{\huge{{\projectname}}}
+
+\vspace{0.7cm}
+
+\Large{Submitted By}
+
+\vspace{0.3cm}
+
+\textbf{\large{\authone}}\\
+\textbf{\normalsize{USN: 22MSRPH022}}
+
+\vspace{0.5cm}
+
+\textbf{\large{\authtwo}}\\
+\textbf{\normalsize{USN: 22MSRPH019}}
+
+\vspace{0.75cm}
+
+\Large{Under the Guidance Of}
+
+\textbf{\large{\guidename}}
+
+\vspace{0.75cm}
+
+To
+
+\vspace{0.4cm}
+
+\large
+
+Department Of Physics and Electronics \\
+School Of Sciences, JAIN (Deemed-to-be University)\\
+Bengaluru\\
+
+\vspace{1cm}
+
+\textbf{\large{June 2023}}
+
+\end{center}
+
+\newpage
+
+\include{initpages/certificate}
+\include{initpages/declaration}
+\include{initpages/acknowledgements}
+\include{initpages/undertaking}
+
+\thispagestyle{empty}
+\tableofcontents
+
+\newpage
+
+\input{abstract}
+
+\newpage
+
+\section{Introduction}
+
+\input{introduction}
+\newpage
+
+\section{Formation of a Neutron Star}
+
+\input{formation}
+
+\newpage
+\section{Properties of Neutron Star}
+
+\input{properties}
+
+\newpage
+
+\section{Types Of Neutron Star}
+
+\input{types}
+
+\newpage
+\section{Gravitational wave}
+
+\input{gravitational_wave}
+
+
+\input{conclusion}
+
+
+\newpage
+\printbibliography
+
+\end{document}
